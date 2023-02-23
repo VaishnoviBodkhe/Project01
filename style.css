@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+
+/* index */
+.index-body {
+    background-image: url(./resources/index\ background.png);
+    background-size:initial;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.index-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.index-text-left {
+    font-family: "PT Mono";
+    padding-top: 20px;
+    padding-left: 230px;
+    font-size: 20px;
+}
+.index-text-right {
+    font-family: "PT Mono";
+    padding-top: 20px;
+    padding-left: 420px;
+    font-size: 20px;
+}
+/* header */
+
+li, a {
+    font-family:"Oswald", sans-serif ;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(0, 255, 242);
+    height: 80px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: auto;
+
+}
+
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgb(1, 224, 143);
+}
+.nav_links a:is(:link, :active, :visited).active {
+    color:rgb(1, 224, 143);
+}
+
+/* admin page */
+
+.admin-body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    align-items: center;
+}
+
+#form-head {
+    margin: 0.5rem 450px;
+    font-family: "Raleway";
+    text-decoration: none;
+    font-size: x-large;
+}
+input {
+    background-color: rgb(1, 224, 143);
+}
+input[type="text"] {
+    color: black;
+    }
+.add-teacher {
+    max-width: 500px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.add-teacher label {
+    display: block; 
+    padding: 1px;
+}
+.add-teacher input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+    
+}
+
+#submitBtn {
+    border: 0;
+    background: rgb(1, 56, 112);
+    padding: 1rem;
+    color: white;
+    margin: 1rem 0;
+    width : 100%;
+    height: auto;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#submitBtn:hover {
+    background-color: black;
+}
+
+#update-teacher {
+    margin: 20px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+#update-teacher button {
+    border: 0;
+    background: rgb(1, 56, 112);
+    color: white;
+    height: 100px;
+    width: 500px;
+    font-family: "Raleway";
+    cursor: pointer;
+    transition: 0.3s background ease;
+}
+#update-teacher button:hover {
+    background-color: rgb(22, 20, 20);
+}
+
+#approve {
+    margin: 20px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+#approve button {
+    border: 0;
+    background: rgb(1, 56, 112);
+    color: white;
+    height: 100px;
+    width: 500px;
+    font-family: "Raleway";
+    cursor: pointer;
+    transition: 0.3s background ease;
+}
+
+#approve button:hover {
+    background-color: rgb(22, 20, 20);
+}
+
+
+  /* teacher body */
+.teacher-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-body , .right-body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    align-items: center;
+}
+
+.schedule-form {
+    max-width: 500px;
+    height: 70vh;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.schedule-form label {
+    display: block; 
+    padding: 1px;
+}
+
+.schedule-form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.manage-appo {
+    max-width: 500px;
+    width: 500px;
+    height: 200px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.view-message {
+    max-width: 500px;
+    height: 200px;
+    width: 500px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.view-appo {
+    max-width: 500px;
+    width: 500px;
+    height: 200px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+#logoutBtn {
+    border: 0;
+    background: rgb(1, 56, 112);
+    padding: 1rem;
+    color: white;
+    margin: 1rem 0;
+    /* width : 100%; */
+    margin-left: 90%;
+    height: auto;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+
+#logoutBtn:hover {
+    background-color: black;
+}
+
+
+
+/* student-page */
+
+.student-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sturight-body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    /* align-items: center; */
+    margin-top: 100px;
+    padding-left: 350px;
+}
+
+.stuleft-body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    padding-top: 100px;
+    align-items: center;
+}
+#studentreg {
+    border: 0;
+    background: rgb(1, 56, 112);
+    padding: 1rem;
+    color: white;
+    margin: 1rem 0;
+    /* width : 100%; */
+    margin-left: 90%;
+    height: auto;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+
+#studentreg:hover {
+    background-color: black;
+}
+
+.student-reg {
+    max-width: 500px;
+    height: 700px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+    font-family: "Raleway";
+}
+
+.student-reg label {
+    display: block; 
+    padding: 20px;
+}
+.student-reg input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.bookappo-form {
+    max-width: 500px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.bookappo-form label {
+    display: block; 
+    padding: 1px;
+}
+.bookappo-form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.send-message {
+    max-width: 500px;
+    width: 500px;
+    height: 200px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.send-message label {
+    display: block; 
+    padding: 1px;
+}
+
+.send-message input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+#stu-form-head {
+    
+    margin: 0.5rem 450px;
+    font-family: "Raleway";
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#registerBtn {
+    border: 0;
+    background: rgb(1, 56, 112);
+    padding: 1rem;
+    color: white;
+    margin: 10rem 0;
+    width : 100%;
+    height: auto;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#registerBtn:hover {
+    background-color: red;
+}
+
+
+/* admin login */
+#login-form {
+    max-width: 500px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+#login-form  label {
+    display: block; 
+    padding: 1px;
+}
+#login-form  input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+    
+}
